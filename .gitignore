@@ -1,1 +1,14 @@
 .DS_Store
+part1/examples/.gitignore
+part1/examples/package-lock.json
+part1/examples/package.json
+part1/examples/README.md
+part1/examples/public/favicon.ico
+part1/examples/public/index.html
+part1/examples/public/logo192.png
+part1/examples/public/logo512.png
+part1/examples/public/manifest.json
+part1/examples/public/robots.txt
+part1/examples/src/App.js
+part1/examples/src/index.js
+part1/.vscode/settings.json

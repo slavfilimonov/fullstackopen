@@ -1,3 +1,5 @@
-Solutions of part 1 exercises in this folder, one app per folder.
+# Part 1 solutions
 
-"examples" is for personal use, so it's added to ".gitignore".
+Solutions of part 1 exercises are in this folder, one app per folder.
+
+The "examples" is an exapmle project from the course materials and is added to ".gitignore" this time.

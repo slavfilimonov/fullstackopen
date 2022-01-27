@@ -1,6 +1,6 @@
-#Part 2 exercises
+# Part 2 solutions
 
-Solutions of part 2 exercises in this folder, one app per folder.
+Solutions of part 2 exercises are in this folder, one app per folder.
 
 The "countries" project uses .env file for the weather api key.
 

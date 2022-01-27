@@ -1,0 +1,35 @@
+* {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 600px;
+  margin: 60px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 60px;
+  color: orange;
+}
+
+.note {
+  margin-top: 20px;
+}
+
+.newNote {
+  margin-top: 40px;
+}
+
+.error {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: red;
+}

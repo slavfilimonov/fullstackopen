@@ -1,0 +1,47 @@
+GET http://localhost:3001/api/people/6240486ae3d64e74f77e5cfb
+
+###
+GET http://localhost:3001/api/people/2
+
+###
+GET http://localhost:3001/wtf
+
+###
+GET http://localhost:3001/info
+
+###
+DELETE http://localhost:3001/api/people/6258fd66c29d6dc6300eab3dfs
+
+###
+POST http://localhost:3001/api/people/ HTTP/1.1
+content-type: application/json
+    
+{ 
+    "name": "OC", 
+    "number": "4123412341"
+}
+
+###
+POST http://localhost:3001/api/people/ HTTP/1.1
+content-type: application/json
+    
+{ 
+    "name": "Olga Chaikina"
+}
+
+###
+POST http://localhost:3001/api/people/ HTTP/1.1
+content-type: application/json
+    
+{ 
+    "number": "42-42-4242424"
+}
+
+###
+PUT http://localhost:3001/api/people/624047aa5badd020c2010a78 HTTP/1.1
+content-type: application/json
+    
+{ 
+    "name": "Anna", 
+    "number": "007"
+}

@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/people/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "DIA",
+    "number": "+7 901 000 0000"
+}
+
+###
+GET  http://localhost:3001/api/people/6258fd66c29d6dc6300eab30

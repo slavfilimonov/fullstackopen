@@ -1,0 +1,13 @@
+###
+GET http://localhost:3003/api/blogs HTTP/1.1
+
+###
+POST http://localhost:3003/api/blogs/ HTTP/1.1
+content-type: application/json
+    
+{ 
+  "title": "12 Rules for Life: An Antidote to Chaos",
+	"author": "Dr. Jordan Peterson",
+	"url": "https://www.jordanbpeterson.com/12-rules-for-life/",
+	"likes": 3427
+}

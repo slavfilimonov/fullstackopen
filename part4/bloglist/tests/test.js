@@ -92,7 +92,7 @@ describe('total likes', () => {
 
 describe('blog with most likes', () => {
 
-	test('of empty list is zero', () => {
+	test('of empty list', () => {
 		const result = listHelper.favoriteBlog(listWithNoBlogs)
 		expect(result).toEqual({
 			title: "No blogs were found",
@@ -121,3 +121,36 @@ describe('blog with most likes', () => {
 
 })
 
+describe('author with most blogs', () => {
+	test('of empty list', () => {
+		const result = listHelper.mostBlogs(listWithNoBlogs)
+		expect(result).toEqual('No blogs were found')
+	})
+
+	test('of the only blog', () => {
+		const result = listHelper.mostBlogs(listWithOneBlog)
+		expect(result).toEqual({ author: 'Edsger W. Dijkstra', blogs: 1 })
+	})
+
+	test('of a bigger list', () => {
+		const result = listHelper.mostBlogs(listWithSixBlogs)
+		expect(result).toEqual({ author: 'Robert C. Martin', blogs: 3 })
+	})
+})
+
+describe('author with most likes', () => {
+	test('of empty list', () => {
+		const result = listHelper.mostLikes(listWithNoBlogs)
+		expect(result).toEqual('No blogs were found')
+	})
+
+	test('of the only blog', () => {
+		const result = listHelper.mostLikes(listWithOneBlog)
+		expect(result).toEqual({ author: 'Edsger W. Dijkstra', likes: 5 })
+	})
+
+	test('of a bigger list', () => {
+		const result = listHelper.mostLikes(listWithSixBlogs)
+		expect(result).toEqual({ author: 'Edsger W. Dijkstra', likes: 17 })
+	})
+})

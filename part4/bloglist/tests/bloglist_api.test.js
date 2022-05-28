@@ -62,6 +62,30 @@ test('correct post is possible to create', async () => {
   expect(content).toEqual(newBlog)
 })
 
+test('likes is 0 by default', async () => {
+  const newBlog = {
+    title: "First class tests",
+    author: "Robert C. Martin",
+    url: "http://blog.cleancoder.com/uncle-bob/2017/05/05/TestDefinitions.html"
+  }
+
+  await api
+    .post('/api/blogs')
+    .send(newBlog)
+    .expect(201)
+    .expect('Content-Type', /application\/json/)
+
+  const response = await api.get('/api/blogs')
+  expect(response.body).toHaveLength(initialBlogs.length + 1)
+
+  const content = response.body
+    .find(blog =>
+      blog.title === 'First class tests'
+      && blog.author === 'Robert C. Martin'
+    )
+  expect(content.likes).toEqual(0)
+})
+
 afterAll(() => {
   mongoose.connection.close()
 })

@@ -8,7 +8,11 @@ bloglistRouter.get('/', async (request, response) => {
 })
 
 bloglistRouter.post('/', async (request, response) => {
-	if (!!request.body.likes === false) {
+	if (!request.body.hasOwnProperty('title') && !request.body.hasOwnProperty('url')) {
+		response.status(400).end()
+	}
+
+	if (!request.body.likes) {
 		request.body.likes = 0
 	}
 

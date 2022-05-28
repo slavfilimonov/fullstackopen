@@ -86,6 +86,19 @@ test('likes is 0 by default', async () => {
   expect(content.likes).toEqual(0)
 })
 
+test('if title and url is empty, return 400', async () => {
+  const newBlog = {
+    author: "Robert C. Martin",
+    likes: 10
+  }
+
+  await api
+    .post('/api/blogs')
+    .send(newBlog)
+    .expect(400)
+
+})
+
 afterAll(() => {
   mongoose.connection.close()
 })

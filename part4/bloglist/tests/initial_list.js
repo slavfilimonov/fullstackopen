@@ -1,6 +1,6 @@
-const listWithNoBlogs = []
+const noBlogs = []
 
-const listWithOneBlog = [
+const oneBlog = [
 	{
 		_id: '5a422aa71b54a676234d17f8',
 		title: 'Go To Statement Considered Harmful',
@@ -10,7 +10,7 @@ const listWithOneBlog = [
 		__v: 0
 	}
 ]
-const listWithSixBlogs = [
+const sixBlogs = [
 	{
 		_id: "5a422a851b54a676234d17f7",
 		title: "React patterns",
@@ -62,7 +62,7 @@ const listWithSixBlogs = [
 ]
 
 module.exports = {
-	listWithNoBlogs,
-	listWithOneBlog,
-	listWithSixBlogs
+	noBlogs,
+	oneBlog,
+	sixBlogs
 }
